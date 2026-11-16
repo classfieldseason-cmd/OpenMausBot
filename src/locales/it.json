@@ -7131,5 +7131,9 @@
   "remote.tailscale.needsApproval": "Questo computer è in attesa di approvazione sulla tua rete Tailscale. Approvalo nella console di amministrazione di Tailscale, poi riprova.",
   "together.switch.title": "Questo computer e Il mio Cloud insieme",
   "together.switch.line": "Disattivato per impostazione predefinita. I bot del Cloud e quelli di questo computer compaiono in un unico elenco, e ognuno si apre dove si trova.",
-  "together.switch.failed": "Non è stato possibile salvare. Riprova."
+  "together.switch.failed": "Non è stato possibile salvare. Riprova.",
+  "settings.chatAvatars.title": "Avatar del bot in chat",
+  "settings.chatAvatars.simpleTitle": "Mostra l’avatar del bot",
+  "settings.chatAvatars.subtitle": "Mostra l’avatar del bot nell’angolo in basso a sinistra di una conversazione. Disattivato per impostazione predefinita.",
+  "settings.chatAvatars.aria": "Mostra l’avatar del bot in chat"
 }

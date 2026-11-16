@@ -10252,5 +10252,9 @@
   "server.rooms.linkedEnded": "{place} 已有 30 天没有连接，与它的连接已结束。已不在这个群组聊天中：{bots}。",
   "room.members.far.place": "位于 {place}",
   "room.members.far.off": "连接已关闭",
-  "room.members.far.missing": "已不可用"
+  "room.members.far.missing": "已不可用",
+  "settings.chatAvatars.title": "聊天中显示机器人头像",
+  "settings.chatAvatars.simpleTitle": "显示机器人头像",
+  "settings.chatAvatars.subtitle": "在会话界面的左下角显示该机器人的头像。默认关闭。",
+  "settings.chatAvatars.aria": "在聊天中显示机器人头像"
 }

@@ -53,6 +53,7 @@ import { stopNoticeDue, useStoppedAt } from "@/lib/stop-turn";
 import { THIS_COMPUTER_NOT_READY } from "../../shared/your-computer";
 import { BotAvatar } from "./Avatar";
 import { TurnPresence } from "./TurnPresence";
+import { useBotUnread } from "./unread-notice";
 import { showToolCallsEnabled, skillAuthoringEnabled } from "@/lib/feature-flags";
 import { normalizeState, stateForBot } from "@/lib/mascot";
 import { peerLine, peerPreview, peerRequest, type PeerLine } from "@/lib/peer-message"; import { PEER_HOW, PeerCompactRow, PeerMessagesContext, PeerOpenedActions } from "./PeerExchange";
@@ -70,6 +71,7 @@ import { VerifyCard } from "./VerifyCard";
 import { askText, runSkill, runSteps, runSummary, showRun, skillPrompt } from "@/lib/verify-steps";
 import { useShowRunCard } from "@/lib/run-card-preferences";
 import { useColorUserBubbles } from "@/lib/user-bubble-preference";
+import { useChatAvatars } from "@/lib/chat-avatar-preference";
 import { userBubbleStyle } from "@/lib/user-bubble-tone";
 import { ToolActivity } from "./ToolActivity";
 import { DataResultChip } from "./DataResultChip"; import { PublishedPageCard } from "./PublishedPageCard";
@@ -880,6 +882,10 @@ export const ChatView = memo(function ChatView({ bot: profile, inForkPanel = fal
   branch.current = messages;
   const onBranch = useCallback((messageId: string) => branch.current.some((m) => m.id === messageId), []);
   const colorMine = useColorUserBubbles();
+  const showChatAvatar = useChatAvatars();
+  const { noticing: avatarNoticing } = useBotUnread(bot);
+  // The corner avatar moves as the sidebar's does: while this bot works, when it has news, or on a mascot motion.
+  const cornerAvatarAnimated = (Boolean(bot.busy) && bot.activity !== "waiting-on-you") || avatarNoticing || (mascotMotion?.kind ?? "none") !== "none";
   // Simple mode draws your bubble in one flat tone of the bot's colour.
   const bubbleStyle = useMemo(() => (colorMine ? userBubbleStyle(bot.color, { flat: !advanced }) : undefined), [colorMine, bot.color, advanced]);
   const hasMore = Boolean(bot.hasMore);
@@ -1274,6 +1280,23 @@ export const ChatView = memo(function ChatView({ bot: profile, inForkPanel = fal
       )}
       </div>
       </GlassScrollFrame>
+
+      {showChatAvatar && (
+        <div
+          data-chat-avatar=""
+          className="pointer-events-none absolute left-4 z-[1]"
+          style={{ bottom: composerDock.height + 16 }}
+        >
+          <BotAvatar
+            bot={bot}
+            state={stateForBot({ ...bot, messages })}
+            size={42}
+            motion={mascotMotion?.kind ?? "none"}
+            motionKey={mascotMotion?.nonce ?? 0}
+            animated={cornerAvatarAnimated}
+          />
+        </div>
+      )}
 
     </main>
     </ThreadLinkContext>

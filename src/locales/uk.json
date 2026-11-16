@@ -4082,5 +4082,9 @@
   "remote.tailscale.needsApproval": "Цей комп’ютер чекає на схвалення у вашій мережі Tailscale. Схваліть його в консолі адміністратора Tailscale, потім спробуйте ще раз.",
   "together.switch.title": "Цей комп'ютер і Моя хмара разом",
   "together.switch.line": "Типово вимкнено. Боти з хмари й боти цього комп'ютера показані в одному списку, і кожен відкривається там, де він є.",
-  "together.switch.failed": "Не вдалося зберегти. Спробуйте ще раз."
+  "together.switch.failed": "Не вдалося зберегти. Спробуйте ще раз.",
+  "settings.chatAvatars.title": "Аватари бота в чаті",
+  "settings.chatAvatars.simpleTitle": "Показувати аватар бота",
+  "settings.chatAvatars.subtitle": "Показує аватар бота в лівому нижньому куті розмови. Типово вимкнено.",
+  "settings.chatAvatars.aria": "Показувати аватар бота в чаті"
 }

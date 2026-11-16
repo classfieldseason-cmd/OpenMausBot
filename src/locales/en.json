@@ -11073,5 +11073,9 @@
   "sidebar.newBotOn.noAi": "No AI is signed in there yet.",
   "sidebar.newBotOn.onlyThere": "Signed in only there: {ais}.",
   "sidebar.newBotOn.onlyHere": "Signed in only here: {ais}.",
-  "sidebar.newBotOn.needsUpdate": "My Cloud needs its next update for this."
+  "sidebar.newBotOn.needsUpdate": "My Cloud needs its next update for this.",
+  "settings.chatAvatars.title": "Bot avatars in chat",
+  "settings.chatAvatars.simpleTitle": "Show the bot's avatar",
+  "settings.chatAvatars.subtitle": "Show the bot's avatar in the bottom-left corner of a conversation. Off by default.",
+  "settings.chatAvatars.aria": "Show the bot's avatar in chat"
 }

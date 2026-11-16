@@ -6007,5 +6007,9 @@
   "remote.tailscale.needsApproval": "Bu bilgisayar Tailscale ağınızda onay bekliyor. Tailscale yönetici konsolunda onaylayın, ardından tekrar deneyin.",
   "together.switch.title": "Bu bilgisayar ve Cloud'um birlikte",
   "together.switch.line": "Varsayılan olarak kapalı. Cloud'daki botlar ile bu bilgisayardaki botlar tek listede görünür ve her biri bulunduğu yerde açılır.",
-  "together.switch.failed": "Kaydedilemedi. Yeniden deneyin."
+  "together.switch.failed": "Kaydedilemedi. Yeniden deneyin.",
+  "settings.chatAvatars.title": "Sohbette bot avatarları",
+  "settings.chatAvatars.simpleTitle": "Botun avatarını göster",
+  "settings.chatAvatars.subtitle": "Bir sohbetin sol alt köşesinde botun avatarını gösterir. Varsayılan olarak kapalıdır.",
+  "settings.chatAvatars.aria": "Sohbette botun avatarını göster"
 }

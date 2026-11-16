@@ -8,7 +8,7 @@ import { AboutDialog } from "../../AboutDialog";
 import { AnalyticsRow } from "../../AnalyticsRow";
 import { ChatWidthRow, FontRow, SidebarToolsLayoutRow } from "../../AppearanceSelectRows";
 import {
-  ColorUserBubblesRow, FollowUpRow, LanguageRow, PinnedCirclesRow, ReplayTourRow, RunCardRow, SendKeyRow, ShowThreadsRow,
+  ChatAvatarsRow, ColorUserBubblesRow, FollowUpRow, LanguageRow, PinnedCirclesRow, ReplayTourRow, RunCardRow, SendKeyRow, ShowThreadsRow,
   ToolCallsRow, UniversalPinsRow, UpdatesRow,
 } from "../../AppSettingsRows";
 import { ChromeRailRow } from "../../ChromeRailToggle";
@@ -167,6 +167,7 @@ export function AppearancePage() {
     <CustomThemesSettings />
     <SettingsGroup label={t("settings.appearance.chat")} block="chat">
       <SettingsRows>
+        <ChatAvatarsRow simple />
         {!ctx.client && <ToolCallsRow />}
         {ctx.advanced && <RunCardRow />}
         {ctx.advanced && <ChatWidthRow />}

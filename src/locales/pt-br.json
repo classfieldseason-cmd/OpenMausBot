@@ -11073,5 +11073,9 @@
   "server.rooms.linkedEnded": "{place} não se conecta há 30 dias, então a ligação com ele terminou. Não está mais neste grupo: {bots}.",
   "room.members.far.place": "em {place}",
   "room.members.far.off": "Ligação desligada",
-  "room.members.far.missing": "Não está mais disponível"
+  "room.members.far.missing": "Não está mais disponível",
+  "settings.chatAvatars.title": "Avatares do bot no chat",
+  "settings.chatAvatars.simpleTitle": "Mostrar o avatar do bot",
+  "settings.chatAvatars.subtitle": "Mostra o avatar do bot no canto inferior esquerdo de uma conversa. Desativado por padrão.",
+  "settings.chatAvatars.aria": "Mostrar o avatar do bot no chat"
 }

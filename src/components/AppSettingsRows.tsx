@@ -14,6 +14,7 @@ import { LearnedSkillsSettings } from "./ShareLearnedSkillsSettings";
 import { effortLabel } from "./ModelPicker";
 import { EFFORT_LEVELS, isEffortLevel } from "../../shared/wire";
 import { setColorUserBubbles, useColorUserBubbles } from "@/lib/user-bubble-preference";
+import { setChatAvatars, useChatAvatars } from "@/lib/chat-avatar-preference";
 import { setShowThreads, useShowThreadsChoice } from "@/lib/thread-preferences";
 import { setAdvancedMode, useAdvancedMode } from "@/lib/interface-mode";
 import { SIMPLE_ONLY } from "@/lib/simple-only";
@@ -273,6 +274,19 @@ export function ColorUserBubblesRow({ simple = false }: { simple?: boolean }) {
         checked={enabled}
         aria-label={t("settings.userBubbles.aria")}
         onClick={() => setColorUserBubbles(!enabled)}
+      />
+    </SettingRow>
+  );
+}
+
+export function ChatAvatarsRow({ simple = false }: { simple?: boolean }) {
+  const enabled = useChatAvatars();
+  return (
+    <SettingRow title={t(simple ? "settings.chatAvatars.simpleTitle" : "settings.chatAvatars.title")} subtitle={simple ? undefined : t("settings.chatAvatars.subtitle")}>
+      <Switch
+        checked={enabled}
+        aria-label={t("settings.chatAvatars.aria")}
+        onClick={() => setChatAvatars(!enabled)}
       />
     </SettingRow>
   );
