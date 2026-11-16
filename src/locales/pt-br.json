@@ -348,7 +348,7 @@
   "server.usageCap.name.serverMonth": "o limite mensal de uso de todos os bots",
   "server.usageCap.name.botDay": "o limite diário de uso de {bot}",
   "server.usageCap.name.botMonth": "o limite mensal de uso de {bot}",
-  "server.usageCap.refused": "Não iniciado: {cap} ({limit}) foi atingido. O trabalho novo volta a começar sozinho depois de {resets}, ou antes, se o dono aumentar o limite em Configurações → Uso.",
+  "server.usageCap.refused": "Não iniciado: {cap} ({limit}) foi atingido. O trabalho novo volta a começar sozinho depois de {resets}, ou antes, se o dono aumentar o limite em Configurações → Gastos.",
   "server.usageCap.noticeTitle": "Limite de uso atingido",
   "server.usageCap.noticeUnattended": "O trabalho automático é pulado até {resets}: {cap} ({limit}) foi atingido. Suas próprias mensagens continuam funcionando.",
   "server.usageCap.noticeEverything": "Nenhum trabalho novo começa até {resets}: {cap} ({limit}) foi atingido.",

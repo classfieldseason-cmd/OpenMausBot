@@ -230,7 +230,7 @@
   "server.usageCap.name.serverMonth": "das monatliche Nutzungslimit für alle Bots",
   "server.usageCap.name.botDay": "das tägliche Nutzungslimit von {bot}",
   "server.usageCap.name.botMonth": "das monatliche Nutzungslimit von {bot}",
-  "server.usageCap.refused": "Nicht gestartet: {cap} ({limit}) ist erreicht. Neue Arbeit startet nach {resets} von selbst wieder, oder früher, wenn der Inhaber das Limit unter Einstellungen → Nutzung anhebt.",
+  "server.usageCap.refused": "Nicht gestartet: {cap} ({limit}) ist erreicht. Neue Arbeit startet nach {resets} von selbst wieder, oder früher, wenn der Inhaber das Limit unter Einstellungen → Ausgaben anhebt.",
   "server.usageCap.noticeTitle": "Nutzungslimit erreicht",
   "server.usageCap.noticeUnattended": "Unbeaufsichtigte Arbeit wird bis {resets} übersprungen: {cap} ({limit}) ist erreicht. Deine eigenen Nachrichten laufen weiter.",
   "server.usageCap.noticeEverything": "Bis {resets} startet keine neue Arbeit: {cap} ({limit}) ist erreicht.",

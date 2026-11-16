@@ -365,7 +365,7 @@
   "server.usageCap.name.serverMonth": "the monthly usage cap for all bots",
   "server.usageCap.name.botDay": "{bot}’s daily usage cap",
   "server.usageCap.name.botMonth": "{bot}’s monthly usage cap",
-  "server.usageCap.refused": "Not started: {cap} ({limit}) is reached. New work starts again by itself after {resets}, or sooner if the owner raises the cap in Settings → Usage.",
+  "server.usageCap.refused": "Not started: {cap} ({limit}) is reached. New work starts again by itself after {resets}, or sooner if the owner raises the cap in Settings → Spending.",
   "server.usageCap.noticeTitle": "Usage cap reached",
   "server.usageCap.noticeUnattended": "Unattended work is skipped until {resets}: {cap} ({limit}) is reached. Your own messages still run.",
   "server.usageCap.noticeEverything": "No new work starts until {resets}: {cap} ({limit}) is reached.",
